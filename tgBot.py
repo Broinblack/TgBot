@@ -18,7 +18,6 @@ def get_weather(city):
         print(f"Ошибка при запросе погоды {Exception}")
         return None
 
-
 weather_data_main = {}
 city = input("Введите город в котором хотите узнать погоду: ")
 weather_data_main = get_weather(city)
