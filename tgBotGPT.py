@@ -48,9 +48,9 @@ def weather(update: Update, context: CallbackContext):
     
     message = (
         f"Погода в {weather_info['city']}:\n"
-        f"🌡 {weather_info['temp']}°C (ощущается как {weather_info['feels_like']}°C)\n"
-        f"☁ {weather_info['description'].capitalize()}\n"
-        f"💧 Влажность: {weather_info['humidity']}%"
+        f"{weather_info['temp']}°C (ощущается как {weather_info['feels_like']}°C)\n"
+        f"{weather_info['description'].capitalize()}\n"
+        f"Влажность: {weather_info['humidity']}%"
     )
     
     update.message.reply_text(message)
